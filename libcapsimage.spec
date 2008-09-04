@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Sep 04 2008 Xavier Lamien <lxtnow[at]gmail.com> - 2.0.0-7
+- Rebuild for rpmfusion inclusion.
+
 * Thu Mar 06 2008 Ian Chapman <packages[AT]amiga-hardware.com> 2.0.0-6
 - Compile ipfinfo, don't use precompiled version (its broken)
 
