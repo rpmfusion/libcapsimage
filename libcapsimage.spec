@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -16,12 +16,7 @@ Source2:        ipflib_linux-amd64.tgz
 Source3:        ipflib_linux-ppc.tgz
 #BuildRequires:  libstdc++-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-ExclusiveArch:  %{ix86} x86_64 ppc
-
-%ifarch %{ix86}
-# Precompiled binaries so force i686
-BuildArch: i686
-%endif
+ExclusiveArch:  i686 x86_64 ppc
 
 %description
 Provides support for reading IPF files, an Amiga disk image format developed by
@@ -142,6 +137,11 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Oct 20 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.0.0-8
+- make package "ExclusiveArch: i686 x86_64 ppc" and remove the
+  "BuildArch: i686"; maybe plague then does what it's supposed
+  to do
+
 * Thu Sep 04 2008 Xavier Lamien <lxtnow[at]gmail.com> - 2.0.0-7
 - Rebuild for rpmfusion inclusion.
 
