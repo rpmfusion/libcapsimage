@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -79,6 +79,7 @@ pushd examples
 gcc %{optflags} -I ../include ipfinfo.c -o ipfinfo -L../ipflib_linux-ppc/ -lcapsimage -s
 popd
 %endif
+sleep 3m
 
 
 %install
@@ -137,6 +138,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Oct 23 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.0.0-9
+- add a small delay during build to circumvent a race on the RPM Fusion buildsys
+
 * Mon Oct 20 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.0.0-8
 - make package "ExclusiveArch: i686 x86_64 ppc" and remove the
   "BuildArch: i686"; maybe plague then does what it's supposed
