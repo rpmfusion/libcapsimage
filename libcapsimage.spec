@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -138,6 +138,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sun Mar 29 2009 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.0.0-10
+- rebuild for new F11 features
+
 * Thu Oct 23 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.0.0-9
 - add a small delay during build to circumvent a race on the RPM Fusion buildsys
 
