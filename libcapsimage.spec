@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        12%{?dist}
+Release:        13%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -138,6 +138,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Mar 12 2013 Nicolas Chauvet <kwizart@gmail.com> - 2.0.0-13
+- https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
 * Thu Mar 08 2012 Nicolas Chauvet <kwizart@gmail.com> - 2.0.0-12
 - Rebuilt for c++ ABI breakage
 
