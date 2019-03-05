@@ -17,6 +17,7 @@ Source3:        ipflib_linux-ppc.tgz
 #BuildRequires:  libstdc++-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 ExclusiveArch:  i686 x86_64 ppc
+BuildRequires:  gcc
 
 %description
 Provides support for reading IPF files, an Amiga disk image format developed by
