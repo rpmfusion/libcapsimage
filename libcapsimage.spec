@@ -3,7 +3,7 @@
 
 Name:           libcapsimage
 Version:        2.0.0
-Release:        23%{?dist}
+Release:        24%{?dist}
 Summary:        Provides IPF support, primarily for UAE/E-UAE
 Group:          System Environment/Libraries
 License:        SPSFLA
@@ -139,6 +139,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Feb 04 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.0.0-24
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Wed Aug 19 2020 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.0.0-23
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
